@@ -65,7 +65,8 @@
                     <!-- Card 1 -->
                     <div class="flex justify-between items-center border p-2 rounded-lg">
                         <div class="flex items-center gap-4">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvjPN8cI1QN064mlz5c0JCfVdkm0flnFwJ0A&s" alt="Mangga" class="w-14 h-14 rounded object-cover">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvjPN8cI1QN064mlz5c0JCfVdkm0flnFwJ0A&s"
+                                alt="Mangga" class="w-14 h-14 rounded object-cover">
                             <div>
                                 <h3 class="font-semibold">Mangga Arum Manis</h3>
                                 <p class="text-sm text-gray-500">/1 Kilogram</p>
@@ -86,7 +87,8 @@
                     <!-- Card 2 -->
                     <div class="flex justify-between items-center border p-2 rounded-lg">
                         <div class="flex items-center gap-4">
-                            <img src="https://www.yesdok.com/visual/slideshow/tomat-article-1641484612.jpg?w=1200" alt="Tomat" class="w-14 h-14 rounded object-cover">
+                            <img src="https://www.yesdok.com/visual/slideshow/tomat-article-1641484612.jpg?w=1200"
+                                alt="Tomat" class="w-14 h-14 rounded object-cover">
                             <div>
                                 <h3 class="font-semibold">Tomat</h3>
                                 <p class="text-sm text-gray-500">/1 Kilogram</p>
@@ -107,7 +109,8 @@
                     <!-- Card 3 -->
                     <div class="flex justify-between items-center border p-2 rounded-lg">
                         <div class="flex items-center gap-4">
-                            <img src="https://d1vbn70lmn1nqe.cloudfront.net/prod/wp-content/uploads/2022/02/18053252/sebenarnya-tomat-buah-atau-sayur-ketahui-faktanya-halodoc.jpg.webp" alt="Tomat" class="w-14 h-14 rounded object-cover">
+                            <img src="https://d1vbn70lmn1nqe.cloudfront.net/prod/wp-content/uploads/2022/02/18053252/sebenarnya-tomat-buah-atau-sayur-ketahui-faktanya-halodoc.jpg.webp"
+                                alt="Tomat" class="w-14 h-14 rounded object-cover">
                             <div>
                                 <h3 class="font-semibold">Tomat</h3>
                                 <p class="text-sm text-gray-500">/1 Bungkus</p>

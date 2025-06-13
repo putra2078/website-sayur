@@ -6,7 +6,7 @@
             <div class="col-12">
                 <div class="flex items-center justify-between mb-4">
                     <h1 class="text-2xl font-bold text-white">Website Jual Sayuran</h1>
-                    <a href="/setting" class="inline-block relative">
+                    <a href="javascript:void(0);" class="inline-block relative" onclick="handleCartClick()">
                         <button type="button" class="relative">
                             <img src="{{ asset('images/icon_shopping_cart.png') }}" alt="Logo" class="w-12 h-12 mr-2">
                             <!-- Badge notifikasi untuk jumlah item -->
@@ -14,6 +14,26 @@
                                 class="absolute -top-1 -right-1 bg-red-500 text-white text-xs font-bold rounded-full h-6 w-6 flex items-center justify-center hidden">0</span>
                         </button>
                     </a>
+
+                    <!-- Modal Alert -->
+                    <div id="cartAlertModal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-40 z-50 hidden">
+                        <div class="bg-white rounded-lg shadow-lg p-6 max-w-xs w-full text-center">
+                            <p class="text-lg font-semibold mb-4">Oops, pilih data terlebih dahulu</p>
+                            <button onclick="closeCartAlert()" class="bg-green-500 text-white px-4 py-2 rounded-lg">OK</button>
+                        </div>
+                    </div>
+                    <script>
+                        function handleCartClick() {
+                            if (totalItems === 0) {
+                                document.getElementById('cartAlertModal').classList.remove('hidden');
+                            } else {
+                                window.location.href = '/setting';
+                            }
+                        }
+                        function closeCartAlert() {
+                            document.getElementById('cartAlertModal').classList.add('hidden');
+                        }
+                    </script>
                 </div>
                 <h1 class="text-xl font-bold mb-2 text-white">Cek Pesanan</h1>
                 <div class="relative mb-2">

@@ -6,7 +6,7 @@
             <div class="col-12">
                 <div class="flex items-center justify-between mb-4">
                     <h1 class="text-2xl font-bold text-white">Website Jual Sayuran</h1>
-                    <a href="/setting" class="inline-block relative">
+                    <a href="javascript:void(0);" class="inline-block relative" onclick="handleCartClick()">
                         <button type="button" class="relative">
                             <img src="{{ asset('images/icon_shopping_cart.png') }}" alt="Logo" class="w-12 h-12 mr-2">
                             <!-- Badge notifikasi untuk jumlah item -->
@@ -14,6 +14,26 @@
                                 class="absolute -top-1 -right-1 bg-red-500 text-white text-xs font-bold rounded-full h-6 w-6 flex items-center justify-center hidden">0</span>
                         </button>
                     </a>
+
+                    <!-- Modal Alert -->
+                    <div id="cartAlertModal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-40 z-50 hidden">
+                        <div class="bg-white rounded-lg shadow-lg p-6 max-w-xs w-full text-center">
+                            <p class="text-lg font-semibold mb-4">Oops, pilih data terlebih dahulu</p>
+                            <button onclick="closeCartAlert()" class="bg-green-500 text-white px-4 py-2 rounded-lg">OK</button>
+                        </div>
+                    </div>
+                    <script>
+                        function handleCartClick() {
+                            if (totalItems === 0) {
+                                document.getElementById('cartAlertModal').classList.remove('hidden');
+                            } else {
+                                window.location.href = '/setting';
+                            }
+                        }
+                        function closeCartAlert() {
+                            document.getElementById('cartAlertModal').classList.add('hidden');
+                        }
+                    </script>
                 </div>
                 <h1 class="text-xl font-bold mb-2 text-white">Cek Pesanan</h1>
                 <div class="relative mb-2">
@@ -65,7 +85,8 @@
                     <!-- Card 1 -->
                     <div class="flex justify-between items-center border p-2 rounded-lg">
                         <div class="flex items-center gap-4">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvjPN8cI1QN064mlz5c0JCfVdkm0flnFwJ0A&s" alt="Mangga" class="w-14 h-14 rounded object-cover">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvjPN8cI1QN064mlz5c0JCfVdkm0flnFwJ0A&s"
+                                alt="Mangga" class="w-14 h-14 rounded object-cover">
                             <div>
                                 <h3 class="font-semibold">Mangga Arum Manis</h3>
                                 <p class="text-sm text-gray-500">/1 Kilogram</p>
@@ -86,7 +107,8 @@
                     <!-- Card 2 -->
                     <div class="flex justify-between items-center border p-2 rounded-lg">
                         <div class="flex items-center gap-4">
-                            <img src="https://www.yesdok.com/visual/slideshow/tomat-article-1641484612.jpg?w=1200" alt="Tomat" class="w-14 h-14 rounded object-cover">
+                            <img src="https://www.yesdok.com/visual/slideshow/tomat-article-1641484612.jpg?w=1200"
+                                alt="Tomat" class="w-14 h-14 rounded object-cover">
                             <div>
                                 <h3 class="font-semibold">Tomat</h3>
                                 <p class="text-sm text-gray-500">/1 Kilogram</p>
@@ -107,7 +129,8 @@
                     <!-- Card 3 -->
                     <div class="flex justify-between items-center border p-2 rounded-lg">
                         <div class="flex items-center gap-4">
-                            <img src="https://d1vbn70lmn1nqe.cloudfront.net/prod/wp-content/uploads/2022/02/18053252/sebenarnya-tomat-buah-atau-sayur-ketahui-faktanya-halodoc.jpg.webp" alt="Tomat" class="w-14 h-14 rounded object-cover">
+                            <img src="https://d1vbn70lmn1nqe.cloudfront.net/prod/wp-content/uploads/2022/02/18053252/sebenarnya-tomat-buah-atau-sayur-ketahui-faktanya-halodoc.jpg.webp"
+                                alt="Tomat" class="w-14 h-14 rounded object-cover">
                             <div>
                                 <h3 class="font-semibold">Tomat</h3>
                                 <p class="text-sm text-gray-500">/1 Bungkus</p>

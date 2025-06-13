@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="max-w-full bg-white min-h-screen">
+    <div class="w-full bg-white min-h-screen px-20">
         <!-- Header -->
         <div class="flex items-center mb-4 bg-green-600 px-4 py-3">
             <a href="/home" class="inline-block">
